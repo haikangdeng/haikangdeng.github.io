@@ -39,8 +39,10 @@ navbar-links:
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: /assets/img/profile_pic.jpg
-
+# title-img: /assets/img/profile_pic.jpg
+cover-img: /assets/img/profile_pic.jpg
+share-img: /assets/img/sunglasses.jpg
+thumbnail-img: /assets/img/ocean_view.jpg
 
 #####################################
 # --- Footer social media links --- #
