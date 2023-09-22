@@ -21,6 +21,10 @@ author: Haikang Deng
 
 navbar-links:
   # About Me: "aboutme"
+  Experience: "#experience"
+  Publications: "#publications"
+  Projects: "#projects"
+  CV: "cv"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
