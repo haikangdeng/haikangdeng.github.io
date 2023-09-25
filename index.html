@@ -32,9 +32,9 @@ subtitle: Welcome to my personal website!
 </div> -->
 
 <!-- assign the variable posts with publications in _publications/, with defaults yaml values -->
-{% assign posts = paginator.publications | default: site.publications %}
+{% assign posts = site.publications | default: site.publications %}
 
-<div class="posts-list" id="publications">
+<div class="publications-list" id="publications">
   {% for post in posts %}
   <article class="post-preview">
 
