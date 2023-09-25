@@ -31,9 +31,7 @@ subtitle: Welcome to my personal website!
   <a href="#experience" class="list-filter">Experience</a>
 </div> -->
 
-<!-- {% assign posts = paginator.posts | default: site.posts %} -->
-<!-- find publications from _publications/ and assign to the variable posts -->
-{% assign posts = site.publications | sort: 'date' | reverse %}
+{% assign posts = site.posts %}
 
 <div class="posts-list" id="publications">
   {% for post in posts %}
