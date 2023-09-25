@@ -31,11 +31,13 @@ subtitle: Welcome to my personal website!
   <a href="#experience" class="list-filter">Experience</a>
 </div> -->
 
-<!-- assign the variable posts with publications in _publications/, with defaults yaml values -->
-{% assign posts = site.publications | default: site.publications %}
+<!-- {% assign posts = paginator.posts | default: site.posts %} -->
+{% assign posts = site.posts %}
 
-<div class="publications-list" id="publications">
+<div class="posts-list" id="publications">
   {% for post in posts %}
+  <!-- if post's layout is publication -->
+  {% if post.layout == "publication" %}
   <article class="post-preview">
 
     {%- capture thumbnail -%}
@@ -71,6 +73,12 @@ subtitle: Welcome to my personal website!
         </h4>
       {% endif %}
     </a>
+
+    {% if post.venue %}
+      <h4 class="post-venue">
+      {{ post.venue }}
+      </h4>
+    {% endif %}
 
     <p class="post-meta">
       {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
@@ -113,11 +121,12 @@ subtitle: Welcome to my personal website!
     </div>
     {% endif %}
 
-    <!-- for every post, add buttons for arXiv, bibtex, copy bibtex -->
+    <!-- for every post, add buttons for arXiv, pdf, bibtex, copy bibtex -->
     <div class="blog-tags">
       <a href="{{ post.arxiv }}" target="_blank">arXiv</a>
-      <a href="{{ post.bibtex }}" target="_blank">bibtex</a>
-      <a href="#" onclick="copyToClipboard('{{ post.bibtex }}')">copy bibtex</a>
+      <a href="{{ post.pdf }}" target="_blank">PDF</a>
+      <a href="{{ post.bibtex }}" target="_blank">BibTeX</a>
+      <a href="#" onclick="copyToClipboard('{{ post.bibtex }}')">Copy BibTeX</a>
 
    </article>
   {% endfor %}
