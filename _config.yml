@@ -280,7 +280,6 @@ defaults:
     values:
       layout: "page"
   -
-    # add publications collection
     scope:
       path: ""
       type: "publications"
