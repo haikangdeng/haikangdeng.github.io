@@ -32,7 +32,8 @@ subtitle: Welcome to my personal website!
 </div> -->
 
 <!-- {% assign posts = paginator.posts | default: site.posts %} -->
-{% assign posts = site.publications %}
+<!-- find publications from _publications/ and assign to the variable posts -->
+{% assign posts = site.publications | sort: 'date' | reverse %}
 
 <div class="posts-list" id="publications">
   {% for post in posts %}
@@ -63,12 +64,12 @@ subtitle: Welcome to my personal website!
     {% endif %}
 
     <a href="{{ post.url | absolute_url }}">
-      <h2 class="post-title">{{ post.title }}</h2>
+      <h3 class="post-title">{{ post.title }}</h3>
 
       {% if post.subtitle %}
-        <h3 class="post-subtitle">
+        <h4 class="post-subtitle">
         {{ post.subtitle }}
-        </h3>
+        </h4>
       {% endif %}
     </a>
 

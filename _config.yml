@@ -21,8 +21,8 @@ author: Haikang Deng
 
 navbar-links:
   # About Me: "aboutme"
-  Experience: "#experience"
   Publications: "#publications"
+  Experience: "#experience"
   Projects: "#projects"
   CV: "cv"
   # Resources:
