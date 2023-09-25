@@ -36,7 +36,7 @@ subtitle: Welcome to my personal website!
 
 <div class="posts-list" id="publications">
   <!-- add a section header -->
-  <h2>Publications</h2>
+  <h1>Publications</h1>
 
   {% for post in posts %}
   <!-- if post's layout is publication -->
@@ -68,7 +68,7 @@ subtitle: Welcome to my personal website!
     {% endif %}
 
     <a href="{{ post.url | absolute_url }}">
-      <h4 class="post-title">{{ post.title }}</h4>
+      <h4>{{ post.title }}</h4>
 
       {% if post.subtitle %}
         <h5 class="post-subtitle">
@@ -87,6 +87,7 @@ subtitle: Welcome to my personal website!
       {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
       Posted on {{ post.date | date: date_format }}
     </p> -->
+    <br>
 
     {% if thumbnail != "" %}
     <div class="post-image post-image-small">
