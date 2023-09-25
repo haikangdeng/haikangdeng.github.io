@@ -24,6 +24,7 @@ subtitle: Welcome to my personal website!
       I am fortunate to be advised by <a href="https://colinraffel.com/" target="_blank">Prof. Colin Raffel</a>.</p>
     <p>My CV can be found <a href="/assets/pdf/2305Resume.pdf" target="_blank">here</a>.</p>
   </div>
+</div>
 
 <!-- <div class="list-filters">
   <a href="#publications" class="list-filter filter-selected">Publications</a>
@@ -111,6 +112,12 @@ subtitle: Welcome to my personal website!
       {% endfor %}
     </div>
     {% endif %}
+
+    <!-- for every post, add buttons for arXiv, bibtex, copy bibtex -->
+    <div class="blog-tags">
+      <a href="{{ post.arxiv }}" target="_blank">arXiv</a>
+      <a href="{{ post.bibtex }}" target="_blank">bibtex</a>
+      <a href="#" onclick="copyToClipboard('{{ post.bibtex }}')">copy bibtex</a>
 
    </article>
   {% endfor %}
