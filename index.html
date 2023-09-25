@@ -123,11 +123,19 @@ subtitle: Welcome to my personal website!
 
     <!-- for every post, add buttons for arXiv, pdf, bibtex, copy bibtex -->
     <div class="blog-tags">
-      <a href="{{ post.arxiv }}" target="_blank">arXiv</a>
-      <a href="{{ post.pdf }}" target="_blank">PDF</a>
-      <a href="{{ post.bibtex }}" target="_blank">BibTeX</a>
-      <a href="#" onclick="copyToClipboard('{{ post.bibtex }}')">Copy BibTeX</a>
-
+      <a class="btn btn-primary" href="#" role="button" href="{{ post.arxiv }}" target="_blank">arXiv</a>
+      <a class="btn btn-primary" href="#" role="button" href="{{ post.pdf }}" target="_blank">PDF</a>
+      <button
+        class="btn btn-primary"
+        v-bind:data-clipboard-text="post.bibtex"
+      >
+        <i class="far fa-copy"></i>
+      </button>
+      {% if post.gh-repo %}
+      <a class="btn btn-primary" href="#" role="button" href="https://github.com/{{ post.gh-repo }}" target="_blank">Code</a>
+      {% endif %}
+    </div>
+    
    </article>
   {% endif %}
   {% endfor %}

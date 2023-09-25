@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: Large Language Models Struggle to Learn Long Tail Knowledge
-subtitle: Nikhil Kandpal, **Haikang Deng**, Adam Roberts, Eric Wallace, Colin Raffel
+subtitle: Nikhil Kandpal, <b>Haikang Deng</b>, Adam Roberts, Eric Wallace, Colin Raffel
 thumbnail-img: /assets/img/long-tail.png
 gh-repo: nkandpa2/long_tail_knowledge
 gh-badge: [star, fork]
