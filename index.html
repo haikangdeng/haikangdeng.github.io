@@ -35,6 +35,9 @@ subtitle: Welcome to my personal website!
 {% assign posts = site.posts %}
 
 <div class="posts-list" id="publications">
+  <!-- add a section header -->
+  <h2 class="post-title">Publications</h2>
+
   {% for post in posts %}
   <!-- if post's layout is publication -->
   {% if post.layout == "publication" %}
@@ -65,19 +68,19 @@ subtitle: Welcome to my personal website!
     {% endif %}
 
     <a href="{{ post.url | absolute_url }}">
-      <h3 class="post-title">{{ post.title }}</h3>
+      <h4 class="post-title">{{ post.title }}</h4>
 
       {% if post.subtitle %}
-        <h4 class="post-subtitle">
+        <h5 class="post-subtitle">
         {{ post.subtitle }}
-        </h4>
+        </h5>
       {% endif %}
     </a>
 
     {% if post.venue %}
-      <h4 class="post-venue">
+      <h5 class="post-venue">
       {{ post.venue }}
-      </h4>
+      </h5>
     {% endif %}
 
     <p class="post-meta">
@@ -123,8 +126,8 @@ subtitle: Welcome to my personal website!
 
     <!-- for every post, add buttons for arXiv, pdf, bibtex, copy bibtex -->
     <div class="blog-tags">
-      <a class="btn btn-primary" href="#" role="button" href="{{ post.arxiv }}" target="_blank">arXiv</a>
-      <a class="btn btn-primary" href="#" role="button" href="{{ post.pdf }}" target="_blank">PDF</a>
+      <a class="btn btn-primary" role="button" href="{{ post.arxiv }}" target="_blank">arXiv</a>
+      <a class="btn btn-primary" role="button" href="{{ post.pdf }}" target="_blank">PDF</a>
       <button
         class="btn btn-primary"
         v-bind:data-clipboard-text="post.bibtex"
@@ -132,10 +135,10 @@ subtitle: Welcome to my personal website!
         <i class="far fa-copy"></i>
       </button>
       {% if post.gh-repo %}
-      <a class="btn btn-primary" href="#" role="button" href="https://github.com/{{ post.gh-repo }}" target="_blank">Code</a>
+      <a class="btn btn-primary" role="button" href="https://github.com/{{ post.gh-repo }}" target="_blank">Code</a>
       {% endif %}
     </div>
-    
+
    </article>
   {% endif %}
   {% endfor %}
