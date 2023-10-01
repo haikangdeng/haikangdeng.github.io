@@ -22,7 +22,7 @@ subtitle: Welcome to my personal website!
     <p>Hi, I am Haikang Deng, a Research Assistant at Department of Computer Science at the 
       University of North Carolina at Chapel Hill.
       I am fortunate to be advised by <a href="https://colinraffel.com/" target="_blank">Prof. Colin Raffel</a>.</p>
-    <p>My CV can be found <a href="/assets/pdf/2305Resume.pdf" target="_blank">here</a>.</p>
+    <!-- <p>My CV can be found <a href="/assets/pdf/2305Resume.pdf" target="_blank">here</a>.</p> -->
   </div>
 
 <!-- <div class="list-filters">
@@ -36,7 +36,7 @@ subtitle: Welcome to my personal website!
 
 <div class="posts-list" id="publications">
   <!-- add a section header -->
-  <h1>Publications</h1>
+  <h2>Publications</h2>
 
   {% for post in posts %}
   <!-- if post's layout is publication -->
@@ -129,9 +129,11 @@ subtitle: Welcome to my personal website!
     <style>
       .blog-tags a.btn.btn-primary,
       .blog-tags button.btn.btn-primary {
-          height: auto; /* Set the same height for all buttons */
-          text-transform: uppercase; /* Convert text to uppercase */
-          font-weight: bold; /* Make text bold */
+          height: 38px; /* Set the height to 38 pixels */
+          background-color: #EAEAEA; /* Set the background color */
+          color: #404040; /* Set the text color */
+          text-transform: uppercase;
+          font-weight: bold;
       }
     </style>
     
