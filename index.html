@@ -68,12 +68,12 @@ subtitle: Welcome to my personal website!
     {% endif %}
 
     <a href="{{ post.url | absolute_url }}">
-      <h4>{{ post.title }}</h4>
+      <h3>{{ post.title }}</h3>
 
       {% if post.subtitle %}
-        <h5 class="post-subtitle">
+        <h4 class="post-subtitle">
         {{ post.subtitle }}
-        </h5>
+        </h4>
       {% endif %}
     </a>
 
@@ -125,14 +125,20 @@ subtitle: Welcome to my personal website!
     </div>
     {% endif %}
 
-    <!-- for every post, add buttons for arXiv, pdf, bibtex, copy bibtex -->
+
+    <style>
+      .blog-tags a.btn.btn-primary,
+      .blog-tags button.btn.btn-primary {
+          height: auto; /* Set the same height for all buttons */
+          text-transform: uppercase; /* Convert text to uppercase */
+          font-weight: bold; /* Make text bold */
+      }
+    </style>
+    
     <div class="blog-tags">
       <a class="btn btn-primary" role="button" href="{{ post.arxiv }}" target="_blank">arXiv</a>
       <a class="btn btn-primary" role="button" href="{{ post.pdf }}" target="_blank">PDF</a>
-      <button
-        class="btn btn-primary"
-        v-bind:data-clipboard-text="post.bibtex"
-      >
+      <button class="btn btn-primary" v-bind:data-clipboard-text="post.bibtex">
         <i class="far fa-copy"></i>
       </button>
       {% if post.gh-repo %}

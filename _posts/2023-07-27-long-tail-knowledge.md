@@ -5,7 +5,7 @@ subtitle: Nikhil Kandpal, <b>Haikang Deng</b>, Adam Roberts, Eric Wallace, Colin
 thumbnail-img: /assets/img/long-tail.png
 gh-repo: nkandpa2/long_tail_knowledge
 gh-badge: [star, fork]
-tags: [Large Language Model, Question Answering, Long-Tail Knowledge]
+tags: [LLM, Question Answering, Long-Tail Knowledge]
 arxiv: https://arxiv.org/abs/2211.08411
 pdf: https://arxiv.org/pdf/2211.08411.pdf
 bibtex: "
