@@ -505,11 +505,12 @@ footer .footer-custom-content {
   width: 100%;
 }
 .post-preview .post-image {
-  float: left;
-  margin-right: 0.625rem;
-  height: 15rem;
+  float: right;
+  margin-left: 0.625rem;
+  height: 12rem;
   width: 20rem;
   border-style: double;
+  vertical-align: auto;
 }
 .post-preview .post-image {
   filter: grayscale(40%);
