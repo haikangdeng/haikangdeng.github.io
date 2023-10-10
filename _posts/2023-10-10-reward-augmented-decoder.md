@@ -2,7 +2,7 @@
 layout: publication
 title: "Reward-Augmented Decoding: Efficient Controlled Text Generation With a Unidirectional Reward Model"
 subtitle: <b>Haikang Deng</b>, Colin Raffel
-thumbnail-img: /assets/img/rad.pdf
+thumbnail-img: /assets/img/rad.png
 gh-repo: haikangdeng/reward_augmented_decoder
 gh-badge: [star, fork]
 tags: [LLM, Reward Model, Text Generation]
