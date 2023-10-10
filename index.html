@@ -148,7 +148,7 @@ subtitle: Welcome to my personal website!
     <div class="blog-tags">
       <a class="btn btn-primary" role="button" href="{{ post.arxiv }}" target="_blank">arXiv</a>
       <a class="btn btn-primary" role="button" href="{{ post.pdf }}" target="_blank">PDF</a>
-      <button class="btn" v-bind:data-clipboard-text="post.bibtex">
+      <button class="btn btn-primary" v-bind:data-clipboard-text="post.bibtex">
         <i class="far fa-copy"></i>
       </button>
       {% if post.gh-repo %}
