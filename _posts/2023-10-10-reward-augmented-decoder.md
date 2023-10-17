@@ -6,16 +6,16 @@ thumbnail-img: /assets/img/rad.png
 gh-repo: haikangdeng/RAD
 gh-badge: [star, fork]
 tags: [LLM, Reward Model, Text Generation]
-# arxiv: https://arxiv.org/abs/2211.08411
-# pdf: https://arxiv.org/pdf/2211.08411.pdf
+arxiv: https://arxiv.org/abs/2310.09520
+pdf: https://arxiv.org/pdf/2310.09520.pdf
 bibtex: "
-@inproceedings{
-anonymous2023rewardaugmented,
-title={Reward-Augmented Decoding: Efficient Controlled Text Generation With a Unidirectional Reward Model},
-author={Anonymous},
-booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing},
-year={2023},
-url={https://openreview.net/forum?id=I13VHLJjLO}
+@misc{deng2023rewardaugmented,
+  title={Reward-Augmented Decoding: Efficient Controlled Text Generation With a Unidirectional Reward Model}, 
+  uthor={Haikang Deng and Colin Raffel},
+  year={2023},
+  eprint={2310.09520},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
 }
 "
 venue: EMNLP, 2023, Singapore

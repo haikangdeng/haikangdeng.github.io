@@ -15,6 +15,10 @@ layout: home
 title: Haikang Deng
 subtitle: Welcome to my personal website!
 --- -->
+<script
+src="https://cdn.jsdelivr.net/npm/vue@2.6.11"
+crossorigin="anonymous"
+></script>
 
 <!-- add a section of profile picture and introduction -->
 <div class="row">
@@ -135,6 +139,7 @@ subtitle: Welcome to my personal website!
           font-weight: bold;
           display: inline-block; /* Set to inline-block to limit width */
           padding-bottom: 10px; /* Adjust padding for the desired button size */
+          padding-top: 10px;
           text-align: center;
       }
   
@@ -148,7 +153,7 @@ subtitle: Welcome to my personal website!
     <div class="blog-tags">
       <a class="btn btn-primary" role="button" href="{{ post.arxiv }}" target="_blank">arXiv</a>
       <a class="btn btn-primary" role="button" href="{{ post.pdf }}" target="_blank">PDF</a>
-      <button class="btn btn-primary" v-bind:data-clipboard-text="{{ post.bibtex }}">
+      <button class="btn btn-primary" v-bind:data-clipboard-text="post.bibtex">
         <i class="far fa-copy"></i>
       </button>
       {% if post.gh-repo %}
