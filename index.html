@@ -138,8 +138,6 @@ crossorigin="anonymous"
           text-transform: uppercase;
           font-weight: bold;
           display: inline-block; /* Set to inline-block to limit width */
-          padding-bottom: 10px; /* Adjust padding for the desired button size */
-          padding-top: 10px;
           text-align: center;
       }
   
@@ -153,9 +151,6 @@ crossorigin="anonymous"
     <div class="blog-tags">
       <a class="btn btn-primary" role="button" href="{{ post.arxiv }}" target="_blank">arXiv</a>
       <a class="btn btn-primary" role="button" href="{{ post.pdf }}" target="_blank">PDF</a>
-      <button class="btn btn-primary" v-bind:data-clipboard-text="post.bibtex">
-        <i class="far fa-copy"></i>
-      </button>
       {% if post.gh-repo %}
       <a class="btn btn-primary" role="button" href="https://github.com/{{ post.gh-repo }}" target="_blank">Code</a>
       {% endif %}
