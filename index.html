@@ -1,24 +1,18 @@
 ---
 layout: page
 title: "Haikang Deng"
-subtitle: Research Assistant | UNC Chapel Hill
+subtitle: Research Assistant @ UNC | seeking for PhD position
 css: "/assets/css/index.css"
 share-img: /assets/img/profile_pic.jpeg
-share-title: ""
+share-title: "Haikang Deng - Research Assistant @ UNC"
 share-description: ""
 cover-img:
   - "/assets/img/port-angeles.jpg" : "Port Angeles, WA (2022)"
   - "/assets/img/ocean-view.jpg" : "Pacific Beach, WA (2022)"
+  - "/assets/img/bixby-bridge.jpg" : "Bixby Bridge, CA (2023)"
+  - "/assets/img/northern-light.jpg" : "Tromso, Norway (2023)"
+  - "/assets/img/soccer-team.jpg" : "Beijing, China (2018)"
 ---
-<!-- ---
-layout: home
-title: Haikang Deng
-subtitle: Welcome to my personal website!
---- -->
-<script
-src="https://cdn.jsdelivr.net/npm/vue@2.6.11"
-crossorigin="anonymous"
-></script>
 
 <!-- add a section of profile picture and introduction -->
 <div class="row">
@@ -39,8 +33,8 @@ crossorigin="anonymous"
 {% assign posts = site.posts %}
 
 <div class="posts-list" id="publications">
-  <!-- add a section header -->
-  <h2>Publications</h2>
+  <!-- add a section header with underline -->
+  <h2 align="center">Publications</h2>
 
   {% for post in posts %}
   <!-- if post's layout is publication -->
@@ -139,6 +133,7 @@ crossorigin="anonymous"
           font-weight: bold;
           display: inline-block; /* Set to inline-block to limit width */
           text-align: center;
+          vertical-align: middle;
       }
   
       .blog-tags a.btn.btn-primary:hover,
@@ -177,10 +172,70 @@ crossorigin="anonymous"
 {% endif %} -->
 
 
+<div class="posts-list" id="experience">
+  <!-- add a section header with underline -->
+  <h2 align="center">Experience</h2>
 
-<div class="posts-list" id="projects">
+  {% for post in posts %}
+  <!-- if post's layout is publication -->
+  {% if post.layout == "experience" %}
+  <article class="post-preview">
+
+    {%- capture thumbnail -%}
+      {% if post.thumbnail-img %}
+        {{ post.thumbnail-img }}
+      {% elsif post.cover-img %}
+        {% if post.cover-img.first %}
+          {{ post.cover-img[0].first.first }}
+        {% else %}
+          {{ post.cover-img }}
+        {% endif %}
+      {% else %}
+      {% endif %}
+    {% endcapture %}
+    {% assign thumbnail=thumbnail | strip %}
+
+    <a href="{{ post.url | absolute_url }}">
+      <h3>{{ post.title }}</h3>
+
+      {% if post.subtitle %}
+        <h4 class="post-subtitle">
+        {{ post.subtitle }}
+        </h4>
+      {% endif %}
+    </a>
+
+    {% if post.venue %}
+      <h5 class="post-venue">
+      {{ post.venue }}
+      </h5>
+    {% endif %}
+
+    <br>
+    <div class="post-entry">
+      {% unless site.feed_show_excerpt == false %}
+      {{ post.excerpt | strip_html | xml_escape }}
+      {% endunless %}
+    </div>
+
+    {% if site.feed_show_tags != false and post.tags.size > 0 %}
+    <div class="blog-tags">
+      Keywords:
+      {% for tag in post.tags %}
+      <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <br>
+
+   </article>
+  {% endif %}
+  {% endfor %}
 </div>
 
 
-<div class="" id="experience">
+
+<div class="posts-list" id="projects">
+
+  
 </div>
