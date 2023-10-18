@@ -214,7 +214,7 @@ cover-img:
     <br>
     <div class="post-entry">
       {% unless site.feed_show_excerpt == false %}
-      {{ post.excerpt | strip_html | xml_escape }}
+      {{ post.excerpt }}
       {% endunless %}
     </div>
 
