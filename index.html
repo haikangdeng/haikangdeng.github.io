@@ -124,8 +124,8 @@ cover-img:
     <br>
 
     <style>
-      .blog-tags a.btn.btn-primary,
-      .blog-tags button.btn.btn-primary {
+      a.btn.btn-primary,
+      button.btn.btn-primary {
           height: 38px;
           background-color: #EAEAEA;
           color: #404040;
@@ -136,14 +136,14 @@ cover-img:
           vertical-align: middle;
       }
   
-      .blog-tags a.btn.btn-primary:hover,
-      .blog-tags button.btn.btn-primary:hover {
+      a.btn.btn-primary:hover,
+      button.btn.btn-primary:hover {
           background-color: #0085A1;
           color: #FFFFFF;
       }
     </style>
     
-    <div class="blog-tags">
+    <div>
       <a class="btn btn-primary" role="button" href="{{ post.arxiv }}" target="_blank">arXiv</a>
       <a class="btn btn-primary" role="button" href="{{ post.pdf }}" target="_blank">PDF</a>
       {% if post.gh-repo %}
