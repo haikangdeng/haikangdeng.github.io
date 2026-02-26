@@ -1,0 +1,27 @@
+basics:
+  name: "Haikang Deng"
+  label: "PhD Student"
+  email: "frankdenghaikang@gmail.com"
+  website: "https://haikangdeng.github.io"
+  location:
+    city: "Los Angeles"
+    region: "CA"
+    countryCode: "US"
+  profiles:
+    - network: "GitHub"
+      url: "https://github.com/haikangdeng"
+    - network: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=MRlsV9kAAAAJ"
+
+summary: "PhD student at UCLA focused on NLP, controlled generation, and diversity."
+
+education: []
+work: []
+skills: []
+publications: []
+presentations: []
+teaching: []
+portfolio: []
+languages: []
+interests: []
+references: []

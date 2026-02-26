@@ -1,0 +1,20 @@
+- title: Research Assistant @ UNC NLP
+  dates: Aug 2022 ~ Feb 2024
+  points:
+    - Benchmarked various Learning from Human Feedback methods and studied their overoptimization problem
+    - Introduced an efficient weighted decoding method that aligns text to a given attribute with a unidirectional reward model
+    - Explored language models' knowledge-learning process and their QA performance relative to their pre-training data
+    - Analyzed language model hallucination and tracked wrong answers in training corpus
+- title: Software Dev Engineer Intern @ Amazon
+  dates: May 2022 ~ Aug 2022
+  points:
+    - Built a Horizonte Service for Local Landing Page which displays local products available for pick up
+    - Deployed the service to production and verified its reliability with production data
+    - Onboarded downstream dependencies to fetch data and extended JSP to render user interface
+    - Configured shopping portal page type and added routing rules from amazon.com
+- title: Software Engineer Intern @ Lenovo
+  dates: May 2021 ~ Aug 2021
+  points:
+    - Trained encoder-decoder LSTM for anomaly detection on time series data
+    - Participated in the design of Control Chart and Anomaly Detection Module
+    - Performed model tuning and data grouping which improved F1 score from 0.41 to 0.48

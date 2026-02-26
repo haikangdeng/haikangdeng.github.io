@@ -1,0 +1,146 @@
+/* ==========================================================================
+   PIP-BOY THEME
+   ========================================================================== */
+
+$pipboy-bg                   : #001100;
+$pipboy-bg-light             : #002200;
+$pipboy-bg-lighter           : #003300;
+$pipboy-text                 : #00ff00;
+$pipboy-text-muted           : #006600;
+$pipboy-link                 : #00ff00;
+$pipboy-link-dark            : #00cc00;
+$pipboy-link-light           : #77ff61;
+
+html[data-theme="pipboy"] {
+    --global-base-color                 : #{$pipboy-bg};
+    --global-bg-color                   : #{$pipboy-bg};
+    --global-footer-bg-color            : #{$pipboy-bg};
+    --global-border-color               : #{$pipboy-bg-lighter};
+    --global-dark-border-color          : #{$pipboy-bg-light};
+    --global-code-background-color      : #0f2418;
+    --global-code-text-color            : #{$pipboy-text};
+    --global-fig-caption-color          : #{$pipboy-text-muted};
+    --global-link-color                 : #{$pipboy-link};
+    --global-link-color-hover           : #{$pipboy-link-dark};
+    --global-link-color-visited         : #{$pipboy-link-light};
+    --global-masthead-link-color        : #{$pipboy-text};
+    --global-masthead-link-color-hover  : #{$pipboy-text-muted};
+    --global-text-color                 : #{$pipboy-text};
+    --global-text-color-light           : #{$pipboy-text-muted};
+    --global-thead-color                : #{$pipboy-bg-lighter};
+}
+
+html[data-theme="pipboy"] body {
+    background-color: #{$pipboy-bg};
+    background-image:
+      radial-gradient(ellipse at center, #001100, #000000),
+      repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 0, 0.04) 0px,
+        rgba(0, 255, 0, 0.04) 1px,
+        rgba(0, 0, 0, 0) 1px,
+        rgba(0, 0, 0, 0) 4px
+      );
+    text-shadow: 0 0 2px rgba(152, 255, 161, 0.6);
+}
+
+html[data-theme="pipboy"] body::before,
+html[data-theme="pipboy"] body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+html[data-theme="pipboy"] body::before {
+    background:
+      repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 128, 0.08) 0px,
+        rgba(0, 255, 128, 0.08) 1px,
+        rgba(0, 0, 0, 0) 1px,
+        rgba(0, 0, 0, 0) 6px
+      ),
+      radial-gradient(circle at 20% 20%, rgba(0, 255, 128, 0.18), transparent 40%),
+      radial-gradient(circle at 80% 10%, rgba(0, 255, 128, 0.12), transparent 45%),
+      radial-gradient(circle at 50% 60%, rgba(0, 255, 128, 0.08), transparent 55%);
+    mix-blend-mode: screen;
+}
+
+html[data-theme="pipboy"] body::after {
+    box-shadow:
+      inset 0 0 120px rgba(0, 255, 128, 0.16),
+      inset 0 0 220px rgba(0, 255, 128, 0.08);
+}
+
+html[data-theme="pipboy"] .author__stats,
+html[data-theme="pipboy"] .page__footer,
+html[data-theme="pipboy"] .page__footer a,
+html[data-theme="pipboy"] .page__footer p,
+html[data-theme="pipboy"] .page__footer li {
+    text-shadow: none;
+}
+
+html[data-theme="pipboy"] body,
+html[data-theme="pipboy"] h1,
+html[data-theme="pipboy"] h2,
+html[data-theme="pipboy"] h3,
+html[data-theme="pipboy"] h4,
+html[data-theme="pipboy"] h5,
+html[data-theme="pipboy"] h6,
+html[data-theme="pipboy"] p,
+html[data-theme="pipboy"] li,
+html[data-theme="pipboy"] a,
+html[data-theme="pipboy"] span,
+html[data-theme="pipboy"] strong,
+html[data-theme="pipboy"] em,
+html[data-theme="pipboy"] small,
+html[data-theme="pipboy"] label,
+html[data-theme="pipboy"] input,
+html[data-theme="pipboy"] button,
+html[data-theme="pipboy"] textarea,
+html[data-theme="pipboy"] select {
+    font-family: "Monofonto", $sans-serif;
+    letter-spacing: 0.2px;
+}
+
+html[data-theme="pipboy"] .author__stats {
+    display: block;
+    margin: 0.75rem 1rem 1rem 0;
+    padding: 0.75rem 0.8rem;
+    border: 1px solid #{$pipboy-bg-lighter};
+    background: rgba(0, 17, 0, 0.75);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.15);
+}
+
+html[data-theme="pipboy"] .author__stat {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+html[data-theme="pipboy"] .author__stat-label {
+    color: #{$pipboy-text-muted};
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+html[data-theme="pipboy"] .author__stat-value {
+    color: #{$pipboy-text};
+}
+
+html[data-theme="pipboy"] .sidebar {
+    padding-bottom: 5rem;
+}
+
+html[data-theme="pipboy"] ::selection {
+    background: #00ff00;
+    color: #000000;
+}
+
+html[data-theme="pipboy"] ::-moz-selection {
+    background: #00ff00;
+    color: #000000;
+}

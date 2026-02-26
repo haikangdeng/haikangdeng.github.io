@@ -1,0 +1,94 @@
+.research-list {
+  .archive__item-title {
+    font-size: $type-size-4;
+    font-weight: 600;
+  }
+
+  .archive__item-excerpt {
+    font-size: $type-size-5;
+  }
+}
+
+@font-face {
+  font-family: "Monofonto";
+  src: url("/assets/fonts/monofonto-rg.otf") format("opentype"),
+       url("/assets/fonts/monofonto.woff2") format("woff2"),
+       url("/assets/fonts/monofonto.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.author__stats {
+  display: none;
+}
+
+.author__avatar-image--pipboy {
+  display: none;
+}
+
+html[data-theme="pipboy"] .author__avatar-image--default {
+  display: none;
+}
+
+html[data-theme="pipboy"] .author__avatar-image--pipboy {
+  display: block;
+}
+
+.experience-point {
+  margin: 0 0 0.35rem 0;
+}
+
+.experience-entry {
+  margin: 0 0 1rem 0;
+}
+
+.experience-title {
+  margin: 0 0 0.1rem 0 !important;
+  font-size: $type-size-6;
+  line-height: 1.3;
+}
+
+.experience-date {
+  margin: 0 0 0.2rem 0 !important;
+  font-size: $type-size-6;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+.experience-points {
+  margin: 0 0 0.35rem 0 !important;
+  padding-left: 0.6rem !important;
+  list-style-position: inside;
+  font-size: $type-size-6;
+  line-height: 1.35;
+}
+
+.experience-points li {
+  margin: 0 0 0.35rem 0;
+  padding-left: 0;
+}
+
+.publications-page {
+  .pub-entry {
+    margin: 0 !important;
+    font-size: $type-size-5;
+    line-height: 1.4;
+  }
+
+  .pub-entry a,
+  .pub-entry em,
+  .pub-entry strong {
+    font-size: inherit;
+  }
+
+  .archive__item-excerpt.pub-abstract {
+    margin: 0 0 0.6rem 0 !important;
+    font-size: $type-size-5;
+    line-height: 1.45;
+  }
+
+  .pub-entry + .pub-abstract {
+    margin-top: 0 !important;
+  }
+}
