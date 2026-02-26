@@ -92,3 +92,15 @@ html[data-theme="pipboy"] .author__avatar-image--pipboy {
     margin-top: 0 !important;
   }
 }
+
+/* Make top nav scrollable on small widths */
+.greedy-nav {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.greedy-nav .visible-links {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
