@@ -110,3 +110,19 @@ html[data-theme="pipboy"] .author__avatar-image--pipboy {
   flex-wrap: nowrap;
   white-space: nowrap;
 }
+
+/* Fix follow dropdown on narrow screens */
+.author__urls-wrapper {
+  z-index: 20;
+}
+
+.author__urls {
+  z-index: 20;
+}
+
+/* Align follow dropdown arrow to button */
+.author__urls:before,
+.author__urls:after {
+  left: auto;
+  right: 20px;
+}

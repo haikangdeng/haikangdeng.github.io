@@ -13,11 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
     themeIcon.classList.remove("fa-sun", "fa-moon", "fa-terminal");
-    if (mode === "pipboy") {
-      themeIcon.classList.add("fa-terminal");
-    } else {
-      themeIcon.classList.add("fa-sun");
-    }
+    themeIcon.classList.add(mode === "pipboy" ? "fa-terminal" : "fa-sun");
   };
 
   const applyTheme = function (theme) {
@@ -80,6 +76,17 @@ document.addEventListener("DOMContentLoaded", function () {
     ageEl.textContent = age.toString();
   };
 
+  const toggleFollowMenu = function () {
+    const menu = document.querySelector(".author__urls");
+    const button = document.querySelector(".author__urls-wrapper button");
+    if (!menu || !button) {
+      return;
+    }
+    const isOpen = menu.style.display === "block";
+    menu.style.display = isOpen ? "none" : "block";
+    button.classList.toggle("open", !isOpen);
+  };
+
   applyTheme(getInitialTheme());
   updatePipboyAge();
 
@@ -87,6 +94,14 @@ document.addEventListener("DOMContentLoaded", function () {
     themeToggle.addEventListener("click", function (event) {
       event.preventDefault();
       toggleTheme();
+    });
+  }
+
+  const followButton = document.querySelector(".author__urls-wrapper button");
+  if (followButton) {
+    followButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      toggleFollowMenu();
     });
   }
 });
