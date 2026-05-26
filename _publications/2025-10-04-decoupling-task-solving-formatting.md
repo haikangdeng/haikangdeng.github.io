@@ -8,6 +8,7 @@ permalink: /publication/decoupling-task-solving-formatting
 date: 2026-04-06
 first_author: true
 venue: ACL
+recognition: Oral
 arxiv: https://arxiv.org/abs/2510.03595
 pdf: https://arxiv.org/pdf/2510.03595.pdf
 ---

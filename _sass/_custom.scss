@@ -99,6 +99,34 @@ html[data-theme="pipboy"] .author__avatar-image--pipboy {
   }
 }
 
+.pub-recognition {
+  display: inline-block;
+  margin-left: 0.25rem;
+  padding: 0.04rem 0.32rem;
+  border-radius: 0.2rem;
+  background: #fff3c4;
+  color: #7a4b00;
+  font-size: 0.82em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+  vertical-align: 0.04em;
+}
+
+html[data-theme="pipboy"] .pub-recognition {
+  display: inline;
+  margin-left: 0.2rem;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font-style: italic;
+  font-weight: inherit;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
 /* Make top nav scrollable on small widths */
 .greedy-nav {
   overflow-x: auto;

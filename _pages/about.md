@@ -23,7 +23,7 @@ I did my undergrad at UNC Chapel Hill where I was advised by [Prof. Colin Raffel
     {% if pub.venue == 'Preprint' %}
       <em>arXiv Preprint{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}</em><br />
     {% else %}
-      <em>{{ pub.venue }}{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}</em><br />
+      <em>{{ pub.venue }}{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}</em>{% if pub.recognition %} <span class="pub-recognition">{{ pub.recognition }}</span>{% endif %}<br />
     {% endif %}
   {% endif %}
   {% if pub.arxiv %}<a href="{{ pub.arxiv }}">arXiv</a>{% endif %}
@@ -43,7 +43,7 @@ I did my undergrad at UNC Chapel Hill where I was advised by [Prof. Colin Raffel
     {% if pub.venue == 'Preprint' %}
       <em>arXiv Preprint{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}</em><br />
     {% else %}
-      <em>{{ pub.venue }}{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}</em><br />
+      <em>{{ pub.venue }}{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}</em>{% if pub.recognition %} <span class="pub-recognition">{{ pub.recognition }}</span>{% endif %}<br />
     {% endif %}
   {% endif %}
   {% if pub.arxiv %}<a href="{{ pub.arxiv }}">arXiv</a>{% endif %}

@@ -6,7 +6,8 @@ category: manuscripts
 subtitle: Po-Nien Kung, Zhen Yang, Jeffrey Luo, Cheng-Fu Yang, <b>Haikang Deng</b>, Zi-Yi Dou, Yinfei Yang, Nanyun Peng, Zhe Gan, Kai-Wei Chang
 permalink: /publication/tractable-trajectory-control
 date: 2026-03-02
-venue: Preprint
+venue: ICML
+recognition: Spotlight
 arxiv: https://arxiv.org/abs/2603.01641
 pdf: https://arxiv.org/pdf/2603.01641.pdf
 ---
