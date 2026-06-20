@@ -7,3 +7,5 @@ main:
     url: /experience/
   - title: "CV"
     url: /cv/
+  - title: "AI4Math Radar"
+    url: https://haikangdeng.github.io/AI4Math_Radar/
