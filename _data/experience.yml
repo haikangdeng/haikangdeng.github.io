@@ -1,8 +1,17 @@
+- title: AI Research Intern @ Bloomberg
+  dates: Jun 2026 ~ Sep 2026
+  points:
+    - To be updated
 - title: Teaching Assistant @ UCLA
   dates: 2025-2026
   points:
     - "CS 146: Introduction to Machine Learning (<em>Fall 2025, Winter 2026</em>)"
     - "CS 263: Natural Language Processing (<em>Spring 2026</em>)"
+- title: Software Dev Engineer @ Amazon
+  dates: Dec 2023 ~ Jul 2024
+  points:
+    - Designed automation for product pre-compute based on given marketplace, merchant, and store utilization score
+    - Composed a product lead time update tool that supports bulk updates (up to 1 million entries)
 - title: Research Assistant @ UNC NLP
   dates: Aug 2022 ~ Feb 2024
   points:
