@@ -10,10 +10,9 @@ I did my undergrad at UNC Chapel Hill where I was advised by [Prof. Colin Raffel
 
 ## Research
 
-{% assign first_author_pubs = site.publications | where: "first_author", true | sort: "date" | reverse %}
-{% assign other_pubs = site.publications | where_exp: "p", "p.first_author != true" | sort: "date" | reverse %}
+{% assign pubs = site.publications | sort: "date" | reverse %}
 
-{% for pub in first_author_pubs %}
+{% for pub in pubs %}
 {% assign about_pub_url = pub.url | relative_url %}
 {% if pub.paper_page %}{% assign about_pub_url = pub.paper_page %}{% endif %}
 <div class="pub-entry" style="margin-bottom: 1rem;">
@@ -28,27 +27,8 @@ I did my undergrad at UNC Chapel Hill where I was advised by [Prof. Colin Raffel
   {% endif %}
   {% if pub.arxiv %}<a href="{{ pub.arxiv }}">arXiv</a>{% endif %}
   {% if pub.pdf %}{% if pub.arxiv %} · {% endif %}<a href="{{ pub.pdf }}">PDF</a>{% endif %}
-  {% if pub.gh-repo %}{% if pub.arxiv or pub.pdf %} · {% endif %}<a href="https://github.com/{{ pub.gh-repo }}">Code</a>{% endif %}<br />
-</div>
-
-{% endfor %}
-
-{% for pub in other_pubs %}
-{% assign about_pub_url = pub.url | relative_url %}
-{% if pub.paper_page %}{% assign about_pub_url = pub.paper_page %}{% endif %}
-<div class="pub-entry" style="margin-bottom: 1rem;">
-  <strong><a href="{{ about_pub_url }}">{{ pub.title }}</a></strong><br />
-  {% if pub.subtitle %}<span class="pub-authors" style="display:block; margin:0.1rem 0 0.2rem 0; line-height:1.25;">{{ pub.subtitle }}</span>{% endif %}
-  {% if pub.venue %}
-    {% if pub.venue == 'Preprint' %}
-      <em>arXiv Preprint{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}</em><br />
-    {% else %}
-      <em>{{ pub.venue }}{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}</em>{% if pub.recognition %} <span class="pub-recognition">{{ pub.recognition }}</span>{% endif %}<br />
-    {% endif %}
-  {% endif %}
-  {% if pub.arxiv %}<a href="{{ pub.arxiv }}">arXiv</a>{% endif %}
-  {% if pub.pdf %}{% if pub.arxiv %} · {% endif %}<a href="{{ pub.pdf }}">PDF</a>{% endif %}
-  {% if pub.gh-repo %}{% if pub.arxiv or pub.pdf %} · {% endif %}<a href="https://github.com/{{ pub.gh-repo }}">Code</a>{% endif %}<br />
+  {% if pub.gh-repo %}{% if pub.arxiv or pub.pdf %} · {% endif %}<a href="https://github.com/{{ pub.gh-repo }}">Code</a>{% endif %}
+  {% if pub.video %}{% if pub.arxiv or pub.pdf or pub.gh-repo %} · {% endif %}<a href="{{ pub.video }}">Video</a>{% endif %}<br />
 </div>
 
 {% endfor %}

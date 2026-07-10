@@ -44,6 +44,7 @@
         {% if post.arxiv %}<a href="{{ post.arxiv }}">arXiv</a>{% endif %}
         {% if post.pdf %}{% if post.arxiv %} · {% endif %}<a href="{{ post.pdf }}">PDF</a>{% endif %}
         {% if post.gh-repo %}{% if post.arxiv or post.pdf %} · {% endif %}<a href="https://github.com/{{ post.gh-repo }}">Code</a>{% endif %}
+        {% if post.video %}{% if post.arxiv or post.pdf or post.gh-repo %} · {% endif %}<a href="{{ post.video }}">Video</a>{% endif %}
       </div>
       {% if post.excerpt %}
         <div class="archive__item-excerpt pub-abstract" itemprop="description" style="margin-bottom: 1rem;">
