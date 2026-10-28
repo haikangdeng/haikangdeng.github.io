@@ -4,8 +4,8 @@ title: "About"
 author_profile: true
 ---
 
-Hi, I am Haikang Deng, a second-year PhD at UCLA under the supervision of [Prof. Nanyun Peng](https://violetpeng.github.io/).
-My research interests lie in the intersection of natural language processing and machine learning, with a focus on controlled generation and diversity methods.
+Hi, I am Haikang Deng, a third-year PhD student at UCLA under the supervision of [Prof. Nanyun Peng](https://violetpeng.github.io/).
+My research focuses on AI for Mathematics and controllable generation.
 I did my undergrad at UNC Chapel Hill where I was advised by [Prof. Colin Raffel](https://colinraffel.com/).
 
 ## Research

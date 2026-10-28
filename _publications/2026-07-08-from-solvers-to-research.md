@@ -3,7 +3,7 @@ layout: single
 title: "From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier"
 collection: publications
 category: manuscripts
-subtitle: Eric Jiang, Xiao Liang, Yikai Zhang, Yingjia Wan, Mengting Li, <b>Haikang Deng</b>, Alexander K. Taylor, Justin Baker, Rushil Raghavan, Junyi Zhang, Ying Nian Wu, Andrea L. Bertozzi, Kai-Wei Chang, Raghu Meka, Matthew Sottile, Nanyun Peng, Amit Sahai, Terence Tao, Wei Wang
+subtitle: Eric Jiang, Xiao Liang, Yingjia Wan, Mengting Li, <b>Haikang Deng</b>, Alexander Taylor, Justin Baker, Rushil Raghavan, Yubei Li, Jinxi Yu, Junyi Zhang, Ying Nian Wu, Andrea L. Bertozzi, Kai-Wei Chang, Raghu Meka, Matthew Sottile, Nanyun Peng, Amit Sahai, Terence Tao, Wei Wang
 permalink: /publication/from-solvers-to-research
 date: 2026-07-08
 venue: Preprint

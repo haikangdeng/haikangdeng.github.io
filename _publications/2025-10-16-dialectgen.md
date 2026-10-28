@@ -6,7 +6,7 @@ category: manuscripts
 subtitle: Yu Zhou, Sohyun An, <b>Haikang Deng</b>, Da Yin, Clark Peng, Cho-Jui Hsieh, Kai-Wei Chang, Nanyun Peng
 permalink: /publication/dialectgen
 date: 2025-10-16
-venue: Preprint
+venue: ResponsibleFM Workshop @ NeurIPS
 arxiv: https://arxiv.org/abs/2510.14949
 pdf: https://arxiv.org/pdf/2510.14949.pdf
 paper_page: https://dialectgen.github.io/

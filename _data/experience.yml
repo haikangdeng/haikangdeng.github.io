@@ -1,24 +1,31 @@
-- title: AI Research Intern @ Bloomberg
+- title: AI/ML Research Intern @ Bloomberg
   dates: Jun 2026 ~ Sep 2026
+  location: New York, NY
   points:
-    - To be updated
+    - Built routing and specialist agents that traverse decision trees and produce auditable triage outputs.
+    - Converted technical support runbooks into decision trees to enable deterministic execution.
+    - Processed streaming logs into Parquet files for local replay.
 - title: Teaching Assistant @ UCLA
-  dates: 2025-2026
+  dates: Sep 2025 ~ Jun 2026
+  location: Los Angeles, CA
   points:
     - "CS 146: Introduction to Machine Learning (<em>Fall 2025, Winter 2026</em>)"
     - "CS 263: Natural Language Processing (<em>Spring 2026</em>)"
 - title: Software Dev Engineer @ Amazon
   dates: Dec 2023 ~ Jul 2024
+  location: Bellevue, WA
   points:
     - Designed automation for product pre-compute based on given marketplace, merchant, and store utilization score
     - Composed a product lead time update tool that supports bulk updates (up to 1 million entries)
-- title: Research Assistant @ UNC NLP
-  dates: Aug 2022 ~ Feb 2024
+    - Built a Local Landing Page to display local products available for pick up.
+- title: Research Assistant @ UNC NLP (<a href="https://github.com/r-three">R-Three Lab</a>)
+  dates: Aug 2022 ~ Mar 2024
   points:
     - Benchmarked various Learning from Human Feedback methods and studied their overoptimization problem
     - Introduced an efficient weighted decoding method that aligns text to a given attribute with a unidirectional reward model
     - Explored language models' knowledge-learning process and their QA performance relative to their pre-training data
     - Analyzed language model hallucination and tracked wrong answers in training corpus
+    - Trained an expert model to route and tag in a contrastive manner with signals from a reward model.
 - title: Software Dev Engineer Intern @ Amazon
   dates: May 2022 ~ Aug 2022
   points:
