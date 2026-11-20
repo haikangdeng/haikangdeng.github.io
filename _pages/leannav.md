@@ -6,3 +6,5 @@ author_profile: false
 ---
 
 **Haikang Deng**, Jia-Chen Gu, Yuxuan Lu, Di Wu, Yihan Xu, Weichen Winston Yin, Junyi Zhang, Nanyun Peng
+
+[Preview draft (PDF)]({{ '/files/LeanNav-preview.pdf' | relative_url }})
